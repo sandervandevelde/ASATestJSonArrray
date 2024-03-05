@@ -1,0 +1,18 @@
+{
+    "name": "ASATestJSonArrray",
+    "startFile": "ASATestJSonArrray.asaql",
+    "configurations": [
+        {
+            "filePath": "JobConfig.json",
+            "subType": "JobConfig"
+        },
+        {
+            "filePath": "Inputs/Local_InputJson1.json",
+            "subType": "InputMock"
+        },
+        {
+            "filePath": "Functions/JavaScriptUDF1.js.json",
+            "subType": "JSFunction"
+        }
+    ]
+}

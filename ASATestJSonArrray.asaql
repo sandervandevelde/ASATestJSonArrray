@@ -1,0 +1,19 @@
+
+
+with converted AS
+(
+SELECT
+    InputJson1.id,
+	UDF.JavaScriptUDF1(InputJson1."record") as rec
+FROM
+    InputJson1
+)
+
+SELECT
+    converted.id,
+	CustomerSensorValue.ArrayValue.e1 AS Record1,
+	CustomerSensorValue.ArrayValue.e2 AS Record2,
+	CustomerSensorValue.ArrayValue.e3 AS Record3
+FROM
+converted
+	CROSS APPLY GetArrayElements(converted.rec) AS CustomerSensorValue

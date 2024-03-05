@@ -1,0 +1,11 @@
+{
+    "Name": "InputJson1",
+    "Type": "Data Stream",
+    "DataSourceType": "Local Input",
+    "Serialization": {
+        "Type": "Json",
+        "Encoding": "UTF8"
+    },
+    "FilePath": "arrayjson.json",
+    "ScriptType": "InputMock"
+}
